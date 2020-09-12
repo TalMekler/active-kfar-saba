@@ -38,6 +38,7 @@ body {
             font-family: 'Assistant', sans-serif;
             margin-left: 25px;
             text-align: right;
+            align-items: center;
             @include breakpoint-less(large) {
                 margin-left: 12.5px;
             }
