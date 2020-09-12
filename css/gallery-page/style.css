@@ -267,8 +267,8 @@ body {
   display: grid;
   -ms-grid-columns: (0.7fr)[3];
       grid-template-columns: repeat(3, 0.7fr);
-  -ms-grid-rows: (315px)[6];
-      grid-template-rows: repeat(6, 315px);
+  -ms-grid-rows: (315px)[8];
+      grid-template-rows: repeat(8, 315px);
   width: 80vw;
   position: relative;
   left: 50%;
