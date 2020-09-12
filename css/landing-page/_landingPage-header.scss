@@ -1,0 +1,128 @@
+body {
+    background: url("/imgs/landingPage-bg.jpg"), rgba($color: black, $alpha: 0.8);
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 30%;
+    overflow-x: hidden;
+    max-height: 100vh;
+}
+
+.landing-page-header {
+    display: flex;
+    padding: 50px 100px;
+    @include breakpoint-less(medium) {
+        padding: 30px 40px;
+    }
+
+    .social {
+        flex: 1;
+
+        i {
+            font-size: 2rem;
+            @include breakpoint-less(medium) {
+                font-size: 1.4rem;
+            }
+            margin-right: 0.7rem;
+            cursor: pointer;
+            color: white;
+            opacity: 0.6;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+    .nav-bar-btns {
+        position: relative;
+        i {
+            font-size: 2rem;
+            @include breakpoint-less(medium) {
+                font-size: 1.4rem;
+            }
+            position: absolute;
+            top: 0;
+            right: 0;
+            cursor: pointer;
+            color: white;
+        }
+        .fa-bars {
+            opacity: 0.6;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    .bg-black-for-nav-bar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1110;
+        background: #000;
+        opacity: 0.85;
+        display: none;
+    }
+    .nav-bar-element {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 400px;
+        background: var(--gray-from-logo);
+        z-index: 1111;
+        transform: scaleX(0);
+        transform-origin: right;
+        @include breakpoint-less(medium) {
+            width: 100vw;
+        }
+        transition: transform 500ms ease-in-out;
+
+        .close-btn {
+            display: block;
+            padding: 30px;
+            .fa-times {
+                font-size: 2rem;
+                cursor: pointer;
+                color: #ffffff;
+                opacity: 0.6;
+                &:hover {
+                    opacity: 1;
+                }
+            }
+        }
+
+        .nav-links {
+            height: 100%;
+            padding: 30px;
+
+            .nav-link {
+                @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap");
+                font-family: "Assistant", sans-serif;
+                color: white;
+                text-align: right;
+                padding: 15px 25px;
+                display: block;
+                cursor: pointer;
+                font-size: 1.4rem;
+                @include breakpoint-less(medium) {
+                    font-size: 1.2rem;
+                    padding: 7.5px 12.5px;
+                    text-align: center;
+                }
+
+                border-top: 2px solid #ffffff;
+                transition: all 0.3s ease-in-out;
+                &:hover {
+                    font-weight: 700;
+                    color: var(--cyan-from-logo);
+                    background: #fff;
+                }
+                &:last-child {
+                    border-bottom: 2px solid #ffffff;
+                }
+            }
+        }
+    }
+}

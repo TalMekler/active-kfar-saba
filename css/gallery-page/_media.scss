@@ -1,0 +1,96 @@
+.media {
+    display: grid;
+    grid-template-columns: repeat(3, 0.7fr);
+    width: 80vw;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    gap: 10px;
+    padding: 50px;
+    background-color: rgba(#fff, 0.7);
+    border-radius: 20px;
+    border: 5px solid var(--gray-from-logo);
+    margin-bottom: 15px;
+    @include breakpoint-less(large) {
+        width: 90vw;
+        padding: 15px;
+    }
+
+    &-header-title {
+        display: block;
+        pointer-events: none;
+        h1 {
+            text-transform: uppercase;
+            @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+            font-family: "Alfa Slab One", cursive;
+            width: fit-content;
+            text-align: center;
+            margin: 0 auto;
+            font-size: 7rem;
+            @include breakpoint-less(large) {
+                font-size: 3rem;
+                width: 85vw;
+                text-align: center;
+                letter-spacing: 15px;
+            }
+            letter-spacing: 15px;
+            color: rgba($color: #fff, $alpha: 0.25);
+            pointer-events: none;
+
+            span {
+                color: var(--cyan-from-logo);
+                opacity: 0.25;
+                letter-spacing: 0;
+            }
+        }
+    }
+
+    .media-item {
+        display: flex;
+        align-items: flex-start;
+        &-src {
+            width: 100%;
+            height: 100%;
+            border: 4px solid var(--gray-from-logo);
+            border-radius: 10px;
+            background: black;
+            cursor: pointer;
+        }
+    }
+    .i1 {
+        grid-column: 1/3;
+        grid-row: 1/2;
+    }
+    .i2 {
+        grid-column: 1/3;
+        grid-row: 2/4;
+    }
+    .i3 {
+        grid-column: 3/4;
+        grid-row: 3/4;
+    }
+    .i4 {
+        grid-column: 2/4;
+        grid-row: 4/6;
+    }
+    .i5 {
+        grid-column: 1/2;
+        grid-row: 4/6;
+    }
+    .i6 {
+        grid-column: 1/2;
+        grid-row: 6/7;
+    }
+    .i7 {
+        grid-column: 2/3;
+        grid-row: 6/7;
+    }
+    .i8 {
+        grid-column: 3/4;
+        grid-row: 1/3;
+    }
+    .i9 {
+        grid-column: 3/4;
+        grid-row: 6/7;
+    }
+}
