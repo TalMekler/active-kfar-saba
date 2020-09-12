@@ -44,7 +44,7 @@ a {
 }
 
 body {
-  background: url("/imgs/landingPage-bg.jpg"), rgba(0, 0, 0, 0.8);
+  background: url("http://up419.siz.co.il/up2/tz4urmyczmtj.jpg"), rgba(0, 0, 0, 0.8);
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-size: cover;
@@ -99,6 +99,9 @@ body {
   font-family: 'Assistant', sans-serif;
   margin-left: 25px;
   text-align: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 999px) {
@@ -108,6 +111,7 @@ body {
 }
 
 .landing-page-header .social .phone-numbers p {
+  text-decoration: none;
   color: white;
   font-size: 1rem;
 }
