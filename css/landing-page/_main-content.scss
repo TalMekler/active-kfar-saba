@@ -21,10 +21,18 @@
             padding: 10px;
             filter: drop-shadow(-4px -4px 4px white) drop-shadow(4px 4px 4px white);
             &:hover {
-                animation-name: pulse-social-link;
-                animation-direction: alternate;
-                animation-duration: 0.35s;
-                animation-iteration-count: infinite;
+                @include breakpoint(large){
+                    animation-name: pulse-social-link;
+                    animation-direction: alternate;
+                    animation-duration: 0.35s;
+                    animation-iteration-count: infinite;
+                }
+                @include breakpoint-less(large){
+                    animation-name: pulse-social-link;
+                    animation-direction: alternate;
+                    animation-duration: 0.35s;
+                    animation-iteration-count: 2;
+                }
             }
         }
     }
