@@ -262,6 +262,8 @@ body {
   .media {
     -ms-grid-columns: (0.7fr)[2];
         grid-template-columns: repeat(2, 0.7fr);
+    -ms-grid-rows: (250px)[5];
+        grid-template-rows: repeat(5, 250px);
   }
 }
 
