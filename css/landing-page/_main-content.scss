@@ -16,7 +16,7 @@
             }
             transform: translateX(-50%);
             opacity: 0;
-            transition: left 1s ease-in, opacity 1s ease-in;
+            transition: left 750ms ease-in, opacity 750ms ease-in;
             cursor: pointer;
             padding: 10px;
             filter: drop-shadow(-4px -4px 4px white) drop-shadow(4px 4px 4px white);

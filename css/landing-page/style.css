@@ -282,8 +282,8 @@ body {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   opacity: 0;
-  -webkit-transition: left 1s ease-in, opacity 1s ease-in;
-  transition: left 1s ease-in, opacity 1s ease-in;
+  -webkit-transition: left 750ms ease-in, opacity 750ms ease-in;
+  transition: left 750ms ease-in, opacity 750ms ease-in;
   cursor: pointer;
   padding: 10px;
   -webkit-filter: drop-shadow(-4px -4px 4px white) drop-shadow(4px 4px 4px white);
