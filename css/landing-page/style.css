@@ -138,11 +138,13 @@ body {
   text-align: left;
 }
 
-.landing-page-header .social .phone-numbers p::after {
-  content: "\f095";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  margin-left: 2px;
+@media screen and (max-width: 999px) {
+  .landing-page-header .social .phone-numbers p::after {
+    content: "\f095";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-left: 2px;
+  }
 }
 
 .landing-page-header .nav-bar-btns {
