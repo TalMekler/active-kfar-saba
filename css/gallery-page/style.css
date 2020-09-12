@@ -260,6 +260,13 @@ body {
 
 @media screen and (max-width: 999px) {
   .media {
+    -ms-grid-columns: (0.7fr)[2];
+        grid-template-columns: repeat(2, 0.7fr);
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .media {
     width: 90vw;
     padding: 15px;
   }

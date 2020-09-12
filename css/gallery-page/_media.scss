@@ -1,6 +1,9 @@
 .media {
     display: grid;
     grid-template-columns: repeat(3, 0.7fr);
+    @include breakpoint-less(large){
+        grid-template-columns: repeat(2, 0.7fr);
+    }
     grid-template-rows: repeat(6, 315px);
     width: 80vw;
     position: relative;
