@@ -51,8 +51,13 @@ body {
                     font-size: .7rem;
                 }
 
-                span{
+                .name{
                     font-weight: 700;
+                }
+                .number{
+                    text-decoration: none;
+                    color: white;
+                    text-align: left;
                 }
             }
         }

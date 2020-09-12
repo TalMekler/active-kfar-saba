@@ -38,6 +38,7 @@ body {
             font-family: 'Assistant', sans-serif;
             margin-left: 25px;
             text-align: right;
+            align-items: center;
             @include breakpoint-less(large) {
                 margin-left: 12.5px;
             }
@@ -50,8 +51,13 @@ body {
                     font-size: .7rem;
                 }
 
-                span{
+                .name{
                     font-weight: 700;
+                }
+                .number{
+                    text-decoration: none;
+                    color: white;
+                    text-align: left;
                 }
             }
         }

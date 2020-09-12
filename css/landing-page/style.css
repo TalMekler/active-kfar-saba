@@ -122,8 +122,14 @@ body {
   }
 }
 
-.landing-page-header .social .phone-numbers p span {
+.landing-page-header .social .phone-numbers p .name {
   font-weight: 700;
+}
+
+.landing-page-header .social .phone-numbers p .number {
+  text-decoration: none;
+  color: white;
+  text-align: left;
 }
 
 .landing-page-header .nav-bar-btns {

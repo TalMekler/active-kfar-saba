@@ -99,6 +99,9 @@ body {
   font-family: 'Assistant', sans-serif;
   margin-left: 25px;
   text-align: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 999px) {
@@ -119,8 +122,14 @@ body {
   }
 }
 
-.gallery-page-header .social .phone-numbers p span {
+.gallery-page-header .social .phone-numbers p .name {
   font-weight: 700;
+}
+
+.gallery-page-header .social .phone-numbers p .number {
+  text-decoration: none;
+  color: white;
+  text-align: left;
 }
 
 .gallery-page-header .nav-bar-btns {
