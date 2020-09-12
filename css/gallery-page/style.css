@@ -347,7 +347,6 @@ body {
   border: 4px solid var(--gray-from-logo);
   border-radius: 10px;
   background: black;
-  cursor: pointer;
 }
 
 @media screen and (min-width: 999px) {
