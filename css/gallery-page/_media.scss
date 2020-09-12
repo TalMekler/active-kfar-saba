@@ -115,5 +115,8 @@
             grid-column: 3/4;
             grid-row: 6/7;
         }
+        @include breakpoint-less(large){
+            grid-column: 1/3;
+        }
     }
 }
