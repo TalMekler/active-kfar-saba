@@ -16,7 +16,7 @@ $(document).ready(function () {
             }
             $(".main-content .right img").css("opacity", "1");
             $(".main-content .left img").css("opacity", "1");
-        }, 1000)
+        }, 500)
     })
 
 });
