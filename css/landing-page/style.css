@@ -96,7 +96,7 @@ body {
 }
 
 .landing-page-header .social .phone-numbers {
-  font-family: 'Assistant', sans-serif;
+  font-family: "Assistant", sans-serif;
   margin-left: 25px;
   text-align: right;
   -webkit-box-align: center;
@@ -110,6 +110,12 @@ body {
   }
 }
 
+@media screen and (min-width: 999px) {
+  .landing-page-header .social .phone-numbers a {
+    pointer-events: none;
+  }
+}
+
 .landing-page-header .social .phone-numbers p {
   text-decoration: none;
   color: white;
@@ -118,7 +124,7 @@ body {
 
 @media screen and (max-width: 999px) {
   .landing-page-header .social .phone-numbers p {
-    font-size: .7rem;
+    font-size: 0.7rem;
   }
 }
 
@@ -130,6 +136,13 @@ body {
   text-decoration: none;
   color: white;
   text-align: left;
+}
+
+.landing-page-header .social .phone-numbers p::after {
+  content: "\f095";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-left: 2px;
 }
 
 .landing-page-header .nav-bar-btns {

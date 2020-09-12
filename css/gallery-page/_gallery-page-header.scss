@@ -32,32 +32,43 @@ body {
                 opacity: 1;
             }
         }
-        
-        .phone-numbers{
-            @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap');
-            font-family: 'Assistant', sans-serif;
+
+        .phone-numbers {
+            @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap");
+            font-family: "Assistant", sans-serif;
             margin-left: 25px;
             text-align: right;
             align-items: center;
             @include breakpoint-less(large) {
                 margin-left: 12.5px;
             }
-            
-            p{
+            a{
+                @include breakpoint(large){
+                    pointer-events: none;
+                }
+            }
+
+            p {
                 text-decoration: none;
                 color: white;
                 font-size: 1rem;
                 @include breakpoint-less(large) {
-                    font-size: .7rem;
+                    font-size: 0.7rem;
                 }
 
-                .name{
+                .name {
                     font-weight: 700;
                 }
-                .number{
+                .number {
                     text-decoration: none;
                     color: white;
                     text-align: left;
+                }
+                &::after {
+                    content: "\f095";
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 900;
+                    margin-left: 2px;
                 }
             }
         }
