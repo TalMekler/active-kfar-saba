@@ -134,7 +134,7 @@ body {
 
 .gallery-page-header .social .phone-numbers p .number {
   text-decoration: none;
-  color: white;
+  color: rgba(255, 255, 255, 0.75);
   text-align: left;
 }
 
