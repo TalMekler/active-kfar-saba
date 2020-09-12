@@ -454,8 +454,8 @@ body {
     -ms-grid-column-span: 3;
     grid-column: 1/4;
     -ms-grid-row: 7;
-    -ms-grid-row-span: 1;
-    grid-row: 7/8;
+    -ms-grid-row-span: 2;
+    grid-row: 7/9;
   }
 }
 /*# sourceMappingURL=style.css.map */
