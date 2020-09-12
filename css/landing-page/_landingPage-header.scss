@@ -5,22 +5,23 @@ body {
     background-size: cover;
     background-position-y: 30%;
     overflow-x: hidden;
-    max-height: 100vh;
 }
 
 .landing-page-header {
     display: flex;
     padding: 50px 100px;
-    @include breakpoint-less(medium) {
+    @include breakpoint-less(large) {
         padding: 30px 40px;
     }
 
     .social {
         flex: 1;
+        display: flex;
+        align-items: center;
 
         i {
             font-size: 2rem;
-            @include breakpoint-less(medium) {
+            @include breakpoint-less(large) {
                 font-size: 1.4rem;
             }
             margin-right: 0.7rem;
@@ -31,12 +32,34 @@ body {
                 opacity: 1;
             }
         }
+        
+        .phone-numbers{
+            @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap');
+            font-family: 'Assistant', sans-serif;
+            margin-left: 25px;
+            text-align: right;
+            @include breakpoint-less(large) {
+                margin-left: 12.5px;
+            }
+            
+            p{
+                color: white;
+                font-size: 1rem;
+                @include breakpoint-less(large) {
+                    font-size: .7rem;
+                }
+
+                span{
+                    font-weight: 700;
+                }
+            }
+        }
     }
     .nav-bar-btns {
         position: relative;
         i {
             font-size: 2rem;
-            @include breakpoint-less(medium) {
+            @include breakpoint-less(large) {
                 font-size: 1.4rem;
             }
             position: absolute;
@@ -74,7 +97,7 @@ body {
         z-index: 1111;
         transform: scaleX(0);
         transform-origin: right;
-        @include breakpoint-less(medium) {
+        @include breakpoint-less(large) {
             width: 100vw;
         }
         transition: transform 500ms ease-in-out;
@@ -106,7 +129,7 @@ body {
                 display: block;
                 cursor: pointer;
                 font-size: 1.4rem;
-                @include breakpoint-less(medium) {
+                @include breakpoint-less(large) {
                     font-size: 1.2rem;
                     padding: 7.5px 12.5px;
                     text-align: center;

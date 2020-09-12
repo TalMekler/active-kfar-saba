@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
 :root {
   --cyan-from-logo: #00b9cf;
@@ -68,6 +69,12 @@ body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .gallery-page-header .social i {
@@ -86,6 +93,33 @@ body {
 
 .gallery-page-header .social i:hover {
   opacity: 1;
+}
+
+.gallery-page-header .social .phone-numbers {
+  font-family: 'Assistant', sans-serif;
+  margin-left: 25px;
+  text-align: right;
+}
+
+@media screen and (max-width: 999px) {
+  .gallery-page-header .social .phone-numbers {
+    margin-left: 12.5px;
+  }
+}
+
+.gallery-page-header .social .phone-numbers p {
+  color: white;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 999px) {
+  .gallery-page-header .social .phone-numbers p {
+    font-size: .7rem;
+  }
+}
+
+.gallery-page-header .social .phone-numbers p span {
+  font-weight: 700;
 }
 
 .gallery-page-header .nav-bar-btns {
