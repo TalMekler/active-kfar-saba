@@ -201,7 +201,18 @@ body {
                         }
                     }
                 }
-                &:hover,
+                &:hover{
+                    @include breakpoint(large){
+                        .nav-link-title {
+                            font-weight: 700;
+                            color: var(--cyan-from-logo);
+                            background: #fff;
+                        }
+                        &::after {
+                            color: var(--cyan-from-logo);
+                        }
+                    }
+                }
                 &-active {
                     .nav-link-title {
                         font-weight: 700;

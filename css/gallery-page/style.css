@@ -300,13 +300,24 @@ body {
   background: #fff;
 }
 
-.gallery-page-header .nav-bar-element .nav-links .nav-link:hover .nav-link-title, .gallery-page-header .nav-bar-element .nav-links .nav-link-active .nav-link-title {
+@media screen and (min-width: 999px) {
+  .gallery-page-header .nav-bar-element .nav-links .nav-link:hover .nav-link-title {
+    font-weight: 700;
+    color: var(--cyan-from-logo);
+    background: #fff;
+  }
+  .gallery-page-header .nav-bar-element .nav-links .nav-link:hover::after {
+    color: var(--cyan-from-logo);
+  }
+}
+
+.gallery-page-header .nav-bar-element .nav-links .nav-link-active .nav-link-title {
   font-weight: 700;
   color: var(--cyan-from-logo);
   background: #fff;
 }
 
-.gallery-page-header .nav-bar-element .nav-links .nav-link:hover::after, .gallery-page-header .nav-bar-element .nav-links .nav-link-active::after {
+.gallery-page-header .nav-bar-element .nav-links .nav-link-active::after {
   color: var(--cyan-from-logo);
 }
 

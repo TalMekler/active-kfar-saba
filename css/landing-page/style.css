@@ -300,13 +300,24 @@ body {
   background: #fff;
 }
 
-.landing-page-header .nav-bar-element .nav-links .nav-link:hover .nav-link-title, .landing-page-header .nav-bar-element .nav-links .nav-link-active .nav-link-title {
+@media screen and (min-width: 999px) {
+  .landing-page-header .nav-bar-element .nav-links .nav-link:hover .nav-link-title {
+    font-weight: 700;
+    color: var(--cyan-from-logo);
+    background: #fff;
+  }
+  .landing-page-header .nav-bar-element .nav-links .nav-link:hover::after {
+    color: var(--cyan-from-logo);
+  }
+}
+
+.landing-page-header .nav-bar-element .nav-links .nav-link-active .nav-link-title {
   font-weight: 700;
   color: var(--cyan-from-logo);
   background: #fff;
 }
 
-.landing-page-header .nav-bar-element .nav-links .nav-link:hover::after, .landing-page-header .nav-bar-element .nav-links .nav-link-active::after {
+.landing-page-header .nav-bar-element .nav-links .nav-link-active::after {
   color: var(--cyan-from-logo);
 }
 
