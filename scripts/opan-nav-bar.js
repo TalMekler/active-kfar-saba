@@ -13,10 +13,32 @@ $(document).ready(function () {
         $(".page-header .nav-bar-element .fa-times").click(function () {
             $(".page-header .nav-bar-element").css("transform", "scaleX(0)");
             $(".page-header .bg-black-for-nav-bar").hide();
+            $(".has-options").each(function(){
+                $(this).removeClass("nav-link-active");
+                $(this).children(".nav-link-options").slideUp();    
+            })
         })
         $(".page-header .bg-black-for-nav-bar").click(function () {
             $(".page-header .nav-bar-element").css("transform", "scaleX(0)");
             $(this).hide();
+            $(".has-options").each(function(){
+                $(this).removeClass("nav-link-active");
+                $(this).children(".nav-link-options").slideUp();    
+            })
+        })
+        
+    })
+
+    // open and close options
+    $(function () {
+        $(".has-options").click(function () {
+            if($(this).hasClass("nav-link-active")){
+                $(this).toggleClass("nav-link-active");
+                $(this).children(".nav-link-options").slideUp();    
+            }else{
+                $(this).toggleClass("nav-link-active");
+                $(this).children(".nav-link-options").slideDown();
+            }
         })
     })
 });

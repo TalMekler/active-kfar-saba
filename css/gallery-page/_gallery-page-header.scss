@@ -42,8 +42,9 @@ body {
             @include breakpoint-less(large) {
                 margin-left: 12.5px;
             }
-            a{
-                @include breakpoint(large){
+
+            a {
+                @include breakpoint(large) {
                     pointer-events: none;
                 }
             }
@@ -61,11 +62,11 @@ body {
                 }
                 .number {
                     text-decoration: none;
-                    color: rgba(white, .75);
+                    color: rgba(white, 0.75);
                     text-align: left;
                 }
                 &::after {
-                    @include breakpoint-less(large){
+                    @include breakpoint-less(large) {
                         content: "\f095";
                         font-family: "Font Awesome 5 Free";
                         font-weight: 900;
@@ -140,12 +141,37 @@ body {
             height: 100%;
             padding: 30px;
 
+            .has-options {
+                .nav-link-title{
+                    position: relative;
+                    &::after {
+                        content: "\f077";
+                        font-family: "Font Awesome 5 Free";
+                        font-weight: 900;
+                        font-size: 1rem;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        left: 15px;
+                        transition: transform 0.3s ease-in-out;
+                    }
+                }
+                
+            }
+            .nav-link-active {
+                .nav-link-title{
+                    &::after {
+                        transform: translateY(-50%) rotate(180deg);
+                    }
+                }
+            }
+
             .nav-link {
                 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap");
                 font-family: "Assistant", sans-serif;
                 color: white;
                 text-align: right;
-                padding: 15px 25px;
+                // padding: 15px 25px;
                 display: block;
                 cursor: pointer;
                 font-size: 1.4rem;
@@ -156,11 +182,35 @@ body {
                 }
 
                 border-top: 2px solid #ffffff;
-                transition: all 0.3s ease-in-out;
-                &:hover {
-                    font-weight: 700;
-                    color: var(--cyan-from-logo);
-                    background: #fff;
+                &-title {
+                    transition: all 0.3s ease-in-out;
+                    padding: 15px 25px;
+                }
+                &-options {
+                    display: none;
+                    a{
+                        text-decoration: none;
+                        color: white;
+                    }
+                    &--option {
+                        padding: 5px 25px 5px 0;
+                        transition: all 0.3s ease-in-out;
+                        &:hover {
+                            color: var(--cyan-from-logo);
+                            background: #fff;
+                        }
+                    }
+                }
+                &:hover,
+                &-active {
+                    .nav-link-title {
+                        font-weight: 700;
+                        color: var(--cyan-from-logo);
+                        background: #fff;
+                    }
+                    &::after {
+                        color: var(--cyan-from-logo);
+                    }
                 }
                 &:last-child {
                     border-bottom: 2px solid #ffffff;
