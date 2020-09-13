@@ -260,6 +260,7 @@ body {
   font-family: "Assistant", sans-serif;
   color: white;
   text-align: right;
+  padding: 5px 0px;
   display: block;
   cursor: pointer;
   font-size: 1.4rem;
