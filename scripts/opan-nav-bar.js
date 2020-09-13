@@ -26,6 +26,10 @@ $(document).ready(function () {
                 $(this).children(".nav-link-options").slideUp();    
             })
         })
+        $(".options a").click(function(){
+            $(".page-header .nav-bar-element").css("transform", "scaleX(0)");
+            $(".page-header .bg-black-for-nav-bar").hide();
+        })
         
     })
 
