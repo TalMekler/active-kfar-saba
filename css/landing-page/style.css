@@ -227,7 +227,7 @@ body {
 }
 
 .landing-page-header .nav-bar-element .nav-links {
-  height: 100%;
+  height: calc(100% - 92px);
   padding: 30px;
 }
 
