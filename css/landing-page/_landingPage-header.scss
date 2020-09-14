@@ -197,13 +197,13 @@ body {
                         transition: all 0.3s ease-in-out;
                         @include breakpoint(large){
                             margin-top: 2.5px;
-                            border-radius: 5px;
+                            border-top-left-radius: 30px;
+                            border-bottom-left-radius: 30px;
                         }
                         &:hover {
                             @include breakpoint(large){
                                 color: var(--cyan-from-logo);
                                 background: #fff;
-                                // background: rgba(#fff, 0.85);
                             }
                         }
                     }

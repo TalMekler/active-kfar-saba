@@ -227,7 +227,7 @@ body {
 }
 
 .gallery-page-header .nav-bar-element .nav-links {
-  height: 100%;
+  height: calc(100% - 92px);
   padding: 30px;
 }
 
@@ -299,7 +299,8 @@ body {
 @media screen and (min-width: 999px) {
   .gallery-page-header .nav-bar-element .nav-links .nav-link-options--option {
     margin-top: 2.5px;
-    border-radius: 5px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
   }
 }
 
