@@ -3,6 +3,7 @@ $(document).ready(function () {
     $(function () {
         $(".page-header .nav-bar-btns .fa-bars").click(function () {
             $(".page-header .nav-bar-element").css("transform", "scaleX(1)");
+            $("html, body").scrollTop(0);
             $("body").css("overflow-y", "hidden");
             setTimeout(function () {
                 $(".page-header .bg-black-for-nav-bar").show();
