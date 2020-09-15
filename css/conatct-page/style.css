@@ -342,9 +342,9 @@ body {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(0, 0, 0, 0.7);
   border-radius: 20px;
-  border: 5px solid var(--gray-from-logo);
+  border: 2px solid rgba(255, 255, 255, 0.5);
   margin-bottom: 15px;
   padding: 50px 80px;
   display: -webkit-box;
@@ -370,6 +370,10 @@ body {
           flex-direction: column;
 }
 
+.main-contact-content .contact-form h3 {
+  color: white;
+}
+
 .main-contact-content .contact-form .contact-form__input-div input, .main-contact-content .contact-form .contact-form__input-div textarea {
   width: 85%;
   text-align: right;
@@ -378,6 +382,8 @@ body {
   margin-top: 10px;
   outline: none;
   border: none;
+  background-color: var(--gray-from-logo);
+  color: #ffffff;
 }
 
 .main-contact-content .contact-form .contact-form__input-div textarea {
@@ -413,6 +419,10 @@ body {
   margin-bottom: 15px;
 }
 
+.main-contact-content .contact-info .conatct-info__in-div p {
+  color: #ffffff;
+}
+
 .main-contact-content .contact-info .conatct-info__in-div .contact-info__title {
   color: var(--cyan-from-logo);
   font-weight: 700;
@@ -427,7 +437,7 @@ body {
   content: "\f3c5";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  color: black;
+  color: #ffffff;
   position: absolute;
   right: -50px;
 }
@@ -437,7 +447,12 @@ body {
 }
 
 .main-contact-content .contact-info .contact-info__address-icons i {
-  font-size: 1.5rem;
+  font-size: 2rem;
+  color: white;
+}
+
+.main-contact-content .contact-info .contact-info__phones {
+  margin-top: 43px;
 }
 
 .main-contact-content .contact-info .contact-info__phones .contact-info__title {
@@ -448,9 +463,19 @@ body {
   content: "\f095";
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  color: black;
+  color: #ffffff;
   position: absolute;
   right: -50px;
+}
+
+.main-contact-content .contact-info .contact-info__phones a {
+  pointer-events: none;
+}
+
+@media screen and (max-width: 999px) {
+  .main-contact-content .contact-info .contact-info__phones a {
+    pointer-events: all;
+  }
 }
 
 .main-contact-content .contact-info .contact-info__phones p {
@@ -459,6 +484,6 @@ body {
 
 .main-contact-content .contact-info .contact-info__phones p span {
   font-weight: 400;
-  color: rgba(0, 0, 0, 0.85);
+  color: rgba(255, 255, 255, 0.85);
 }
 /*# sourceMappingURL=style.css.map */
