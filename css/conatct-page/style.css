@@ -334,4 +334,131 @@ body {
 .contact-page-header .nav-bar-element .nav-links .nav-link:last-child {
   border-bottom: 2px solid #ffffff;
 }
+
+.main-contact-content {
+  direction: rtl;
+  position: relative;
+  width: 80vw;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+  border: 5px solid var(--gray-from-logo);
+  margin-bottom: 15px;
+  padding: 50px 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 999px) {
+  .main-contact-content {
+    width: 90vw;
+    padding: 15px;
+  }
+}
+
+.main-contact-content .contact-form {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.main-contact-content .contact-form .contact-form__input-div input, .main-contact-content .contact-form .contact-form__input-div textarea {
+  width: 85%;
+  text-align: right;
+  font-size: 1rem;
+  padding: 10px 20px;
+  margin-top: 10px;
+  outline: none;
+  border: none;
+}
+
+.main-contact-content .contact-form .contact-form__input-div textarea {
+  height: 230px;
+}
+
+.main-contact-content .contact-form .contact-form__submit-div input {
+  background-color: var(--cyan-from-logo);
+  color: var(--gray-from-logo);
+  padding: 15px 40px;
+  font-weight: 700;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 15px;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.main-contact-content .contact-form .contact-form__submit-div input:hover {
+  color: var(--cyan-from-logo);
+  background-color: var(--gray-from-logo);
+}
+
+.main-contact-content .contact-info {
+  padding-right: 50px;
+}
+
+.main-contact-content .contact-info .conatct-info__in-div {
+  margin-top: 23px;
+  margin-right: 50px;
+  margin-bottom: 15px;
+}
+
+.main-contact-content .contact-info .conatct-info__in-div .contact-info__title {
+  color: var(--cyan-from-logo);
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.main-contact-content .contact-info .contact-info__address .contact-info__title {
+  position: relative;
+}
+
+.main-contact-content .contact-info .contact-info__address .contact-info__title::before {
+  content: "\f3c5";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: black;
+  position: absolute;
+  right: -50px;
+}
+
+.main-contact-content .contact-info .contact-info__address-icons {
+  margin-top: 5px;
+}
+
+.main-contact-content .contact-info .contact-info__address-icons i {
+  font-size: 1.5rem;
+}
+
+.main-contact-content .contact-info .contact-info__phones .contact-info__title {
+  position: relative;
+}
+
+.main-contact-content .contact-info .contact-info__phones .contact-info__title::before {
+  content: "\f095";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: black;
+  position: absolute;
+  right: -50px;
+}
+
+.main-contact-content .contact-info .contact-info__phones p {
+  font-weight: 700;
+}
+
+.main-contact-content .contact-info .contact-info__phones p span {
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.85);
+}
 /*# sourceMappingURL=style.css.map */
