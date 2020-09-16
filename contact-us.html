@@ -11,7 +11,7 @@
         $txt = "הודעה חדשה מ:".$name.\n\n."מספר טלפון: ".$phone.ֿ\n\n."מייל: ".$mail.\n\n."תוכן הודעה: ".$msg;
 
         if(mail($mailTo, "הודעה חדשה מהאתר", $txt, $headers)){
-            header("Location: contact-us.html?mail-send");
+            // header("Location: contact-us.html?mail-send");
             $mail_send = TRUE;
         }
     }
