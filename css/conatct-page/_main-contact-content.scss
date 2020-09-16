@@ -36,19 +36,6 @@
             position: relative;
             transition: all 0.3s ease-in-out;
 
-            .mail-send,
-            .mail-send-error {
-                width: 85%;
-                font-family: $hebrow-font;
-                color: var(--gray-from-logo);
-            }
-            .mail-send{
-                background-color: #04aa04;
-            }
-            .mail-send-error{
-                background-color: tomato;
-            }
-
             input,
             textarea {
                 width: 85%;
@@ -67,7 +54,7 @@
             }
             &::before,
             &::after {
-                transition: all 0.4s ease-in-out;
+                transition: all .8s ease-in-out;
             }
 
             &::before {
