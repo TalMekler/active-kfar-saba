@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap");
+            
+
 :root {
     // Fonts
 
@@ -5,6 +8,12 @@
     --cyan-from-logo: #00b9cf;
     --gray-from-logo: #494f56;
 }
+
+$active-border-contact-input: 3px solid var(--cyan-from-logo);
+
+// Fonts
+$hebrow-font: "Assistant", sans-serif;
+
 
 // Breakpoints
 $breakpoints: (

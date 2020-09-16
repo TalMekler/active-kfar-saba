@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap");
 :root {
   --cyan-from-logo: #00b9cf;
   --gray-from-logo: #494f56;
@@ -352,10 +353,19 @@ body {
   display: flex;
 }
 
+.main-contact-content * {
+  font-family: "Assistant", sans-serif;
+}
+
 @media screen and (max-width: 999px) {
   .main-contact-content {
     width: 90vw;
     padding: 15px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
   }
 }
 
@@ -370,13 +380,25 @@ body {
           flex-direction: column;
 }
 
+@media screen and (max-width: 999px) {
+  .main-contact-content .contact-form {
+    width: 100%;
+  }
+}
+
 .main-contact-content .contact-form h3 {
   color: white;
 }
 
-.main-contact-content .contact-form .contact-form__input-div input, .main-contact-content .contact-form .contact-form__input-div textarea {
+.main-contact-content .contact-form .contact-form__input-div {
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.main-contact-content .contact-form .contact-form__input-div input,
+.main-contact-content .contact-form .contact-form__input-div textarea {
   width: 85%;
-  text-align: right;
   font-size: 1rem;
   padding: 10px 20px;
   margin-top: 10px;
@@ -384,10 +406,67 @@ body {
   border: none;
   background-color: var(--gray-from-logo);
   color: #ffffff;
+  font-family: "Assistant", sans-serif;
 }
 
 .main-contact-content .contact-form .contact-form__input-div textarea {
-  height: 230px;
+  height: 235px;
+  resize: none;
+}
+
+.main-contact-content .contact-form .contact-form__input-div::before, .main-contact-content .contact-form .contact-form__input-div::after {
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.main-contact-content .contact-form .contact-form__input-div::before {
+  content: "";
+  border-right: 3px solid var(--cyan-from-logo);
+  border-left: 3px solid var(--cyan-from-logo);
+  position: absolute;
+  top: 10px;
+  bottom: 0;
+  right: 0;
+  left: 15%;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+}
+
+@media screen and (max-width: 999px) {
+  .main-contact-content .contact-form .contact-form__input-div::before {
+    left: 7.5%;
+    right: 7.5%;
+  }
+}
+
+.main-contact-content .contact-form .contact-form__input-div::after {
+  content: "";
+  border-top: 3px solid var(--cyan-from-logo);
+  border-bottom: 3px solid var(--cyan-from-logo);
+  position: absolute;
+  top: 10px;
+  bottom: 0;
+  right: 0;
+  left: 15%;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+@media screen and (max-width: 999px) {
+  .main-contact-content .contact-form .contact-form__input-div::after {
+    left: 7.5%;
+    right: 7.5%;
+  }
+}
+
+.main-contact-content .contact-form .contact-form__input-div-active::before {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+}
+
+.main-contact-content .contact-form .contact-form__input-div-active::after {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 .main-contact-content .contact-form .contact-form__submit-div input {
@@ -413,10 +492,23 @@ body {
   padding-right: 50px;
 }
 
+@media screen and (max-width: 999px) {
+  .main-contact-content .contact-info {
+    margin-top: 25px;
+    padding-right: 0;
+  }
+}
+
 .main-contact-content .contact-info .conatct-info__in-div {
   margin-top: 23px;
   margin-right: 50px;
   margin-bottom: 15px;
+}
+
+@media screen and (max-width: 999px) {
+  .main-contact-content .contact-info .conatct-info__in-div {
+    margin-right: 0;
+  }
 }
 
 .main-contact-content .contact-info .conatct-info__in-div p {
@@ -440,6 +532,12 @@ body {
   color: #ffffff;
   position: absolute;
   right: -50px;
+}
+
+@media screen and (max-width: 999px) {
+  .main-contact-content .contact-info .contact-info__address .contact-info__title::before {
+    right: 50px;
+  }
 }
 
 .main-contact-content .contact-info .contact-info__address-icons {
@@ -466,6 +564,12 @@ body {
   color: #ffffff;
   position: absolute;
   right: -50px;
+}
+
+@media screen and (max-width: 999px) {
+  .main-contact-content .contact-info .contact-info__phones .contact-info__title::before {
+    right: 50px;
+  }
 }
 
 .main-contact-content .contact-info .contact-info__phones a {
