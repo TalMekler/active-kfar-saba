@@ -434,6 +434,21 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
+.main-contact-content .contact-form .contact-form__input-div .mail-send,
+.main-contact-content .contact-form .contact-form__input-div .mail-send-error {
+  width: 85%;
+  font-family: "Assistant", sans-serif;
+  color: var(--gray-from-logo);
+}
+
+.main-contact-content .contact-form .contact-form__input-div .mail-send {
+  background-color: #04aa04;
+}
+
+.main-contact-content .contact-form .contact-form__input-div .mail-send-error {
+  background-color: tomato;
+}
+
 .main-contact-content .contact-form .contact-form__input-div input,
 .main-contact-content .contact-form .contact-form__input-div textarea {
   width: 85%;

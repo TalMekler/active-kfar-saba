@@ -1,3 +1,23 @@
+<?php
+    if(isset($_POST["submit"])){
+        $name = $_POST["name"];
+        $phone = $_POST["phone"];
+        $mail = $_POST["mail"];
+        $msg = $_POST["msg"];
+
+        $mailTo = "tal.mekler11@gmail.com";
+        $headers = "From :".$mail;
+
+        $txt = "הודעה חדשה מ:".$name.\n\n."מספר טלפון: ".$phone.ֿ\n\n."מייל: ".$mail.\n\n."תוכן הודעה: ".$msg;
+
+        if(mail($mailTo, "הודעה חדשה מהאתר", $txt, $headers)){
+            header("Location: contact-us.html?mail-send");
+            $mail_send = TRUE;
+        }
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -101,6 +121,24 @@
         <div class="contact-form">
             <h3>כתבו לנו</h3>
             <form action="sendemail.php" method="post">
+                <?php
+                    if($mail_send):
+                ?>
+                <div class="mail-send">
+                    <h4>ההודעה נשלחה בהצלחה!</h4>
+                </div>
+                <?php
+                    endif;
+                ?>
+                <?php
+                    if(!$mail_send):
+                ?>
+                <div class="mail-send-error">
+                    <h4>ההודעה לא נשלחה.. בדוק שוב את ההזנות</h4>
+                </div>
+                <?php
+                    endif;
+                ?>
                 <div class="contact-form__input-div">
                     <input type="text" name="name" id="name" placeholder="שם מלא">
                 </div>
