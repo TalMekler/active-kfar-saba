@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap");
 :root {
@@ -41,6 +42,43 @@ body {
 
 a {
   text-decoration: none;
+}
+
+.main-content-title {
+  display: block;
+  pointer-events: none;
+}
+
+.main-content-title h1 {
+  text-transform: uppercase;
+  font-family: "Alfa Slab One", cursive;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 7rem;
+  letter-spacing: 15px;
+  color: rgba(255, 255, 255, 0.25);
+  pointer-events: none;
+}
+
+@media screen and (max-width: 999px) {
+  .main-content-title h1 {
+    font-size: 2rem;
+    width: 85vw;
+    text-align: center;
+    letter-spacing: 10px;
+  }
+}
+
+.main-content-title h1 .clr-cyan {
+  color: var(--cyan-from-logo);
+  opacity: 0.25;
+}
+
+.main-content-title h1 .no-space {
+  letter-spacing: 0;
 }
 
 body {
