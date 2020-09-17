@@ -142,10 +142,17 @@
                 transition: all .3s ease-in-out;
                 border-radius: 5px;
                 pointer-events: none;
+                @include breakpoint-less(large){
+                    top: 5px;
+                    opacity: 1;
+                    background-color: rgba($color: white, $alpha: 1);
+                    font-size: .75em;
+                }
                 p{
                     font-family: $hebrow-font;
                     text-align: center;
                     font-weight: 700;
+                    font-size: 1em;
                 }
             }
             &:hover{

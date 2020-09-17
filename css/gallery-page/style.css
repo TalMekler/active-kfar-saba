@@ -575,10 +575,20 @@ body {
   pointer-events: none;
 }
 
+@media screen and (max-width: 999px) {
+  .media-smadar .media-item .item-text {
+    top: 5px;
+    opacity: 1;
+    background-color: white;
+    font-size: .75em;
+  }
+}
+
 .media-smadar .media-item .item-text p {
   font-family: "Assistant", sans-serif;
   text-align: center;
   font-weight: 700;
+  font-size: 1em;
 }
 
 .media-smadar .media-item:hover .item-text {
