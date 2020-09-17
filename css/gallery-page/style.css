@@ -572,6 +572,7 @@ body {
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
   border-radius: 5px;
+  pointer-events: none;
 }
 
 .media-smadar .media-item .item-text p {
