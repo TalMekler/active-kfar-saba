@@ -332,7 +332,7 @@ body {
   color: var(--cyan-from-logo);
 }
 
-.landing-page-header .nav-bar-element .nav-links .nav-link:last-child {
+.landing-page-header .nav-bar-element .nav-links .nav-link.border-bottom {
   border-bottom: 2px solid #ffffff;
 }
 

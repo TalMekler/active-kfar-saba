@@ -333,7 +333,7 @@ body {
   color: var(--cyan-from-logo);
 }
 
-.gallery-page-header .nav-bar-element .nav-links .nav-link:last-child {
+.gallery-page-header .nav-bar-element .nav-links .nav-link.border-bottom {
   border-bottom: 2px solid #ffffff;
 }
 

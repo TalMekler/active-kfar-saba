@@ -175,13 +175,13 @@ body {
                 display: block;
                 cursor: pointer;
                 font-size: 1.4rem;
+                border-top: 2px solid #ffffff;
                 @include breakpoint-less(large) {
                     font-size: 1.2rem;
                     padding: 7.5px 12.5px;
                     text-align: center;
                 }
 
-                border-top: 2px solid #ffffff;
                 &-title {
                     transition: all 0.3s ease-in-out;
                     padding: 15px 25px;
@@ -230,7 +230,8 @@ body {
                         color: var(--cyan-from-logo);
                     }
                 }
-                &:last-child {
+
+                &.border-bottom{
                     border-bottom: 2px solid #ffffff;
                 }
             }

@@ -230,7 +230,7 @@ body {
                         color: var(--cyan-from-logo);
                     }
                 }
-                &:last-child {
+                &.border-bottom {
                     border-bottom: 2px solid #ffffff;
                 }
             }
