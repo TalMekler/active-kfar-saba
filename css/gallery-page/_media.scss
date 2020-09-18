@@ -60,7 +60,7 @@
         }
     }
     &-mischa {
-        grid-template-rows: repeat(6, 315px);
+        grid-template-rows: repeat(7, 315px);
         @include breakpoint-less(large) {
             grid-template-rows: repeat(5, 250px);
         }
@@ -118,7 +118,16 @@
                 grid-row: 6/7;
             }
             @include breakpoint-less(large) {
-                grid-column: 1/3;
+                // Do Not Need Specific Style For Mobile
+            }
+        }
+        .i10{
+            @include breakpoint(large) {
+                grid-column: 1/4;
+                grid-row: 7/8;
+            }
+            @include breakpoint-less(large) {
+                // Do Not Need Specific Style For Mobile
             }
         }
     }
