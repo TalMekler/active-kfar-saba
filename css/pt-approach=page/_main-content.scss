@@ -10,17 +10,14 @@
     border: 2px solid rgba($color: white, $alpha: 0.5);
     margin-bottom: 15px;
 
-    @include breakpoint-less(large){
+    @include breakpoint-less(large) {
         width: 90vw;
         padding: 25px 40px;
     }
 
     .text {
         color: white;
-        margin-bottom: 40px;
-        @include breakpoint-less(large){
-            margin-bottom: 20px;
-        }
+
         p {
             font-family: $hebrow-font;
             margin-bottom: 25px;
@@ -29,7 +26,7 @@
             &:last-child {
                 margin-bottom: 0px;
             }
-            @include breakpoint-less(large){
+            @include breakpoint-less(large) {
                 font-size: 1rem;
                 margin-bottom: 12.5px;
             }
@@ -37,11 +34,23 @@
     }
     .media {
         display: grid;
-        grid-template-columns: repeat(1, .5fr);
+        grid-template-columns: repeat(1, 0.5fr);
         grid-template-rows: repeat(1, 250px);
         justify-content: center;
+        margin-bottom: 40px;
+        margin-top: 20px;
         @include breakpoint-less(large) {
             grid-template-columns: repeat(1, 1fr);
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+        &.big-grid {
+            grid-template-columns: repeat(2, 0.7fr);
+            grid-template-rows: repeat(2, 250px);
+            gap: 30px;
+            @include breakpoint-less(large){
+                grid-template-columns: repeat(1, 1fr);
+            }
         }
         .media-item {
             display: flex;
@@ -54,7 +63,7 @@
                 border-radius: 10px;
                 background: black;
             }
-            &-text{
+            &-text {
                 // direction: rtl;
                 padding: 5px 10px;
                 position: absolute;
@@ -62,29 +71,29 @@
                 left: 5px;
                 top: -10px;
                 opacity: 0;
-                transition: all .3s ease-in-out;
+                transition: all 0.3s ease-in-out;
                 border-radius: 5px;
                 pointer-events: none;
-                @include breakpoint-less(large){
+                color: black;
+                @include breakpoint-less(large) {
                     top: 5px;
                     opacity: 1;
                     background-color: rgba($color: white, $alpha: 1);
-                    font-size: .75em;
+                    font-size: 0.75em;
                 }
-                p{
+                p {
                     font-family: $hebrow-font;
                     text-align: center;
                     font-weight: 700;
                     font-size: 1em;
                 }
             }
-            &:hover{
-                .media-item-text{
+            &:hover {
+                .media-item-text {
                     top: 5px;
                     opacity: 1;
                     background-color: rgba($color: white, $alpha: 1);
                 }
-
             }
         }
     }
