@@ -18,6 +18,9 @@ $breakpoints: (
 // Fonts
 $hebrow-font: "Assistant", sans-serif;
 
+// Colors
+$cyan-from-logo: #00b9cf;
+
 @mixin breakpoint($size) {
     $breakpoint-value: map-get($breakpoints, $size);
 

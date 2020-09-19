@@ -373,4 +373,99 @@ body {
 .page-header .nav-bar-element .nav-links .nav-link.border-bottom {
   border-bottom: 2px solid #ffffff;
 }
+
+.main-content {
+  direction: rtl;
+  position: relative;
+  width: 80vw;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 50px 80px;
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 999px) {
+  .main-content {
+    width: 90vw;
+    padding: 25px 40px;
+  }
+}
+
+.main-content .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Assistant", sans-serif;
+  margin-bottom: 20px;
+}
+
+.main-content .profile:last-child {
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 999px) {
+  .main-content .profile {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.main-content .profile-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 200px;
+  height: 200px;
+  background-color: #00b9cf;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 999px) {
+  .main-content .profile-name {
+    width: 100%;
+    height: 100px;
+  }
+}
+
+.main-content .profile-name h1 {
+  color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.main-content .profile-desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  height: 200px;
+  background-color: rgba(0, 185, 207, 0.5);
+  color: white;
+  font-size: 1.5rem;
+  padding: 10px 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (max-width: 999px) {
+  .main-content .profile-desc {
+    font-size: 1.2rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */
