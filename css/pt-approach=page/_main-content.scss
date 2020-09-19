@@ -52,6 +52,9 @@
                 grid-template-columns: repeat(1, 1fr);
             }
         }
+        &.no-margin-bot{
+            margin-bottom: 0;
+        }
         .media-item {
             display: flex;
             align-items: flex-start;

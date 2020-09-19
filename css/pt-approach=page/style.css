@@ -455,6 +455,10 @@ body {
   }
 }
 
+.main-pt_approach-content .media.no-margin-bot {
+  margin-bottom: 0;
+}
+
 .main-pt_approach-content .media .media-item {
   display: -webkit-box;
   display: -ms-flexbox;
