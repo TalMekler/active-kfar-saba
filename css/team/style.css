@@ -416,6 +416,34 @@ body {
   }
 }
 
+.main-content .profile.reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 999px) {
+  .main-content .profile.reverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.main-content .profile.reverse .profile-name {
+  margin-left: 0px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 999px) {
+  .main-content .profile.reverse .profile-name {
+    margin-left: 10px;
+    margin-right: 0px;
+  }
+}
+
 .main-content .profile-name {
   display: -webkit-box;
   display: -ms-flexbox;

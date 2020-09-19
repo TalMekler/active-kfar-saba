@@ -26,7 +26,20 @@
         @include breakpoint-less(large){
             flex-direction: column;
         }
-
+        &.reverse {
+            flex-direction: row-reverse;
+            @include breakpoint-less(large){
+                flex-direction: column;
+            }   
+            .profile-name{
+                margin-left: 0px;
+                margin-right: 10px;
+                @include breakpoint-less(large){
+                    margin-left: 10px;
+                    margin-right: 0px;
+                }
+            }
+        }
         &-name{
             display: flex;
             width: 200px;
