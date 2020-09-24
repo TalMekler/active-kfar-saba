@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@400;700&display=swap");
 :root {
   --cyan-from-logo: #00b9cf;
   --gray-from-logo: #494f56;
@@ -627,5 +628,54 @@ body {
 .main-contact-content .contact-info .contact-info__phones p span {
   font-weight: 400;
   color: rgba(255, 255, 255, 0.85);
+}
+
+footer {
+  direction: rtl;
+  position: relative;
+  margin-top: 50px;
+  bottom: 0%;
+  width: 100vw;
+  padding: 10px 50px;
+  background-color: black;
+  z-index: 11111111;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  font-family: "Assistant", sans-serif;
+}
+
+@media screen and (max-width: 999px) {
+  footer {
+    padding: 10px 25px;
+    margin: 0;
+  }
+}
+
+footer .right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+footer .left {
+  direction: ltr;
+}
+
+@media screen and (max-width: 999px) {
+  footer .left, footer .right {
+    font-size: .7rem;
+  }
+}
+
+footer .left a, footer .right a {
+  text-decoration: none;
+  color: white;
+  font-weight: 700;
+}
+
+footer .left a:hover, footer .right a:hover {
+  color: var(--cyan-from-logo);
 }
 /*# sourceMappingURL=style.css.map */
