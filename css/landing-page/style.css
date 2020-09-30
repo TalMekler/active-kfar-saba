@@ -38,6 +38,7 @@
 
 body {
   min-height: 100vh;
+  position: relative;
 }
 
 a {
@@ -505,6 +506,7 @@ footer {
 @media screen and (max-width: 999px) {
   footer {
     padding: 10px 25px;
+    position: absolute;
   }
 }
 

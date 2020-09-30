@@ -12,6 +12,7 @@ footer {
     font-family: "Assistant", sans-serif;
     @include breakpoint-less(large){
         padding: 10px 25px;
+        position: absolute;
     }
     .right{
         flex: 1;
