@@ -1,6 +1,7 @@
 footer {
     direction: rtl;
-    position: absolute;
+    position: fixed;
+    margin-top: 50px;
     bottom: 0%;
     width: 100vw;
     padding: 10px 50px;
@@ -12,7 +13,7 @@ footer {
     font-family: "Assistant", sans-serif;
     @include breakpoint-less(large){
         padding: 10px 25px;
-        position: absolute;
+        margin: 0;
     }
     .right{
         flex: 1;

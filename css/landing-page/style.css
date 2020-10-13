@@ -490,7 +490,8 @@ body {
 
 footer {
   direction: rtl;
-  position: absolute;
+  position: fixed;
+  margin-top: 50px;
   bottom: 0%;
   width: 100vw;
   padding: 10px 50px;
@@ -506,7 +507,7 @@ footer {
 @media screen and (max-width: 999px) {
   footer {
     padding: 10px 25px;
-    position: absolute;
+    margin: 0;
   }
 }
 
