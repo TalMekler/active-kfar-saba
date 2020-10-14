@@ -352,7 +352,8 @@ body {
 
 .main-content .right img,
 .main-content .left img {
-  width: 275px;
+  width: 330px;
+  height: 370px;
   position: absolute;
   top: 20%;
   -webkit-transform: translateX(-50%);

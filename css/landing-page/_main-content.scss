@@ -6,7 +6,8 @@
     .left {
         position: relative;
         img {
-            width: 275px;
+            width: 330px;
+            height: 370px;
             position: absolute;
             top: 20%;
             @include breakpoint-less(large) {
