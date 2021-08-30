@@ -46,7 +46,7 @@ a {
 }
 
 body {
-  background: url("http://up419.siz.co.il/up2/tz4urmyczmtj.jpg"), rgba(0, 0, 0, 0.8);
+  background: url("../landingPage-bg.jpg"), rgba(0, 0, 0, 0.8);
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-size: cover;
